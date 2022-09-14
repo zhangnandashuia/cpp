@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int* ptr1 = new int;
+	char* ptr2 = new char;
+	double* ptr3 = new double;
+	*ptr1 = 1;
+	*ptr2 = 'A';
+	*ptr3 = 3.54;
+	cout << "size of int " << sizeof(int) << "size of ptr1:" << sizeof(ptr1)<<endl;
+	cout << "size of char " << sizeof(char) << "size of ptr1:" << sizeof(ptr2) << endl;
+	cout << "size of double " << sizeof(double) << "size of ptr1:" << sizeof(ptr1) << endl;
+
+}
