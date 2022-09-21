@@ -1,0 +1,16 @@
+int main()
+{
+	int* p = 0;
+	p = new int(55);
+	if (!p)
+	{
+		cout << "allocation failure\n";
+		return 1;
+
+	}
+	*p = 20;
+	cout << *p << endl;
+	delete p;
+	return 0;
+}
+//放在堆区,要用new,delete,用完要记得删,不然内存会爆掉.
