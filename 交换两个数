@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void swap(int* m, int* n)//取地址
+{
+	int tem = *m;
+	*m = *n;
+	*n = tem;
+}
+void swap2(int& m, int& n)//取别名
+{
+	int temp = m;
+	m = n;
+	n = temp;
+}
+int main()
+{
+	int a = 5;
+	int b = 10;
+	swap2(a, b);
+	cout << a<<"\n" << b << endl;
+	return 0;
+}
+//还可以用加法,或者位运算来交换,
